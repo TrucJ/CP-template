@@ -5,6 +5,7 @@
 #include <vector>
 #include <iomanip>
 #include <queue>
+#include <stack>
 #define ll long long
 #define II pair<int, int>
 #define PQ priority_queue
@@ -52,7 +53,7 @@ int main()
     cout.tie(0);
     // sangnt();
     int t = 1;
-     cin >> t;
+    // cin >> t;
     while (t--)
     {
         solve();
