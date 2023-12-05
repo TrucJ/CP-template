@@ -17,14 +17,12 @@
 #define Rev(_, m, n) for (int _ = m; _ >= n; _--)
 using namespace std;
 void solve();
-ll gcd(ll a, ll b)
-{
+ll gcd(ll a, ll b) {
     if (b == 0)
         return a;
     return gcd(b, a % b);
 }
-ll Pow(ll a, ll n)
-{
+ll Pow(ll a, ll n) {
     if (n == 0)
         return 1;
     if (n == 1)
@@ -33,19 +31,16 @@ ll Pow(ll a, ll n)
     return res * res * Pow(a, n % 2);
 }
 bool IsPrime[MAX];
-void sangnt()
-{
+void sangnt() {
     for (int i = 2; i < MAX; i++)
         IsPrime[i] = 1;
     for (int i = 0; i < MAX; i++)
-        if (IsPrime[i])
-        {
+        if (IsPrime[i]) {
             for (int j = 2 * i; j < MAX; j += i)
                 IsPrime[j] = 0;
         }
 }
-int main()
-{
+int main() {
     if (fopen("trucj.inp", "r"))
         freopen("trucj.inp", "r", stdin),
             freopen("trucj.out", "w", stdout);
@@ -55,15 +50,16 @@ int main()
     // sangnt();
     int t = 1;
     // cin >> t;
-    while (t--)
-    {
+    while (t--) {
+        reset();
         solve();
         cout << endl;
     }
     return 0;
 }
 
-void solve()
-{
+void reset() {
+}
 
+void solve() {
 }
