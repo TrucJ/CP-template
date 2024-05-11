@@ -17,6 +17,7 @@
 #define Rev(_, m, n) for (int _ = m; _ >= n; _--)
 using namespace std;
 void solve();
+void reset();
 ll gcd(ll a, ll b) {
     if (b == 0)
         return a;
@@ -49,7 +50,7 @@ int main() {
     cout.tie(0);
     // sangnt();
     int t = 1;
-    // cin >> t;
+    cin >> t;
     while (t--) {
         reset();
         solve();
